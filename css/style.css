@@ -1,0 +1,429 @@
+#barre{
+    background-color: rgb(200, 22, 22);
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index:1000;
+
+}
+
+#barre-titre{
+    margin-left: 50px;
+    font-size: 34px;
+    text-transform: uppercase;
+    color : white;
+    font-weight: bolder;
+}
+
+#barre-menu{
+    position: relative;
+    justify-content: space-around;
+    margin-right: 30px;
+    display: flex;
+    width: 280px;
+    font-size: 20px;
+}
+
+#recherche{
+    border-radius: 20px;
+    height: 20px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding : 20px;
+    margin-left:40px;
+}
+
+#img {display : grid ;
+      grid-template-columns: repeat(3,1fr);}
+
+
+#details {text-decoration: none;
+      color: red;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+.details{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#n {color: grey;
+    opacity: 50%;
+    font-size: 20px;
+}
+
+
+#barre-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    padding-top: 110px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.case{
+    margin:50px 25px;
+    padding-left:20px;
+    padding-top:20px;
+        border: 3px solid grey;
+    border-radius: 10px;
+    width: 430px;
+    height: 160px;
+    display:flex;
+}
+
+.case h2, .case h3{
+    margin-left : 0px;
+    margin-bottom:-9px;
+    width : 80px;
+    font-size:23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info-pokemon{
+    display:flex;
+    flex-direction: column;
+    width: 225px;
+    position: relative;
+        top:-17px;
+        left: 50px;
+}
+
+.nom{
+    /*width:175px;*/
+    height:120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case .img-pokemon{
+    width: auto;
+    height: 100%;
+    position: relative;
+    top:-7%;
+    left: 15px;
+}
+
+.case h2, .case h3{
+    width : auto;
+}
+
+.case .type{
+    /*width:175px;*/
+    height:15px;
+    display: flex;
+    margin-bottom:15px;
+    justify-content: center;
+}
+
+.case .type img{
+    margin-right: 7px;
+}
+
+.lesCases{
+    display:grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
+#empereur {overflow: auto;}
+
+#wshx {
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    color: #d6001c;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+ 
+.casex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 600px;
+    margin: 0 20px;
+    padding: 24px;
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.img-pokemonx {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+ 
+.nomx {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.nomx h2 {
+    margin: 0;
+    font-size: 40px;
+}
+ 
+.typesx {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.typesx img {
+    height: 24px;
+    width: auto;
+}
+
+.mesurex {
+    margin: 4px 0;
+    font-size: 14px;
+}
+ 
+.infos-pokemonx h3 {
+    margin: 18px 0 8px;
+    font-size: 15px;
+}
+ 
+.statx {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.stat-nomx {
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stat-fondx {
+    flex: 1;
+    height: 10px;
+    border-radius: 999px;
+    background: #e6e8ee;
+    overflow: hidden;
+}
+
+.stat-valeurx {
+    height: 100%;
+    border-radius: 999px;
+    background: #e5566d;
+}
+
+/*⚔️👑 ALERTE GÉNÉRALE — LE CONQUÉRANT DU HTML EST ARRIVÉ 👑⚔️
+
+ÉCARTEZ-VOUS, MISÉRABLES DÉVELOPPEURS.
+
+JE SUIS LE CONQUÉRANT DU HTML.
+LE DESTRUCTEUR DE DIV.
+LE DOMPTEUR DE SPAN.
+LE SEIGNEUR DES BALISES.
+L'EMPEREUR DU CSS.
+LE MAÎTRE ABSOLU DU LIVE SHARE.
+
+TU CROIS CODER ?
+MOI JE RÈGNE.
+
+TU OUVRES VISUAL STUDIO CODE ?
+MOI JE LUI DONNE LA PERMISSION DE DÉMARRER.
+
+TU ÉCRIS <div> ?
+MOI JE DÉCIDE SI ELLE MÉRITE D'ÊTRE FERMÉE.
+
+TU UTILISES FLEXBOX ?
+MOI JE FLEX SUR TES BOX.
+
+TU FAIS DU RESPONSIVE ?
+MOI JE SUIS RESPONSABLE DE L'INTERNET.
+
+TU CONNAIS JAVASCRIPT ?
+JAVASCRIPT ME CONNAÎT PERSONNELLEMENT.
+
+QUAND JE FAIS CTRL + S, LE SERVEUR ME REMERCIE.
+
+QUAND JE FAIS CTRL + Z, LE TEMPS RECULE.
+
+QUAND JE FAIS F12, GOOGLE CHROME SE MET À GENOUX.
+
+QUAND JE TAPE ! PUIS ENTRÉE, EMMET M'APPELLE PAPA.
+
+MES BALISES SONT SÉMANTIQUES.
+MES DIV SONT DIVINES.
+MES CLASSES SONT LÉGENDAIRES.
+MES ID SONT UNIQUES DANS TOUT L'UNIVERS.
+
+JE NE FAIS PAS DE BUG.
+JE CRÉE DES FONCTIONNALITÉS INCOMPRISES.
+
+JE NE FAIS PAS DE COMMITS.
+JE GRAVE MON HISTOIRE DANS GIT.
+
+JE NE FAIS PAS DE PULL.
+C'EST LE REPOSITORY QUI VIENT À MOI.
+
+JE NE FAIS PAS DE MERGE.
+LES BRANCHES S'AGENOUILLENT ET FUSIONNENT D'ELLES-MÊMES.
+
+JE SUIS LE ROI DU LOCALHOST.
+LE SULTAN DU PORT 5500.
+LE PHARAON DU INDEX.HTML.
+LE NAPOLÉON DU STYLESHEET.
+LE GENGIS KHAN DU FRONT-END.
+
+TON CODE A DES ERREURS ?
+NORMAL.
+IL A PEUR DE MOI.
+
+TON LIVE SHARE LAG ?
+NORMAL.
+MA PUISSANCE DÉPASSE LA BANDE PASSANTE.
+
+TON CURSEUR BOUGE TOUT SEUL ?
+CE N'EST PAS UN BUG.
+C'EST MA PRÉSENCE DIVINE.
+
+TU PENSES ÊTRE ADMINISTRATEUR DE LA SESSION ?
+PAUVRE MORTEL.
+
+JE SUIS LA SESSION.
+JE SUIS LE TERMINAL.
+JE SUIS LE NAVIGATEUR.
+JE SUIS LE DOCUMENT.
+JE SUIS LE DOCTYPE.
+
+<!DOCTYPE EMPEREUR>
+<html lang="DOMINATION">
+<head>
+<title>LE RÈGNE DU CONQUÉRANT</title>
+</head>
+<body>
+<h1>AGENOUILLE-TOI DEVANT LE HTML</h1>
+<p>TON CSS NE PEUT RIEN CONTRE MOI.</p>
+</body>
+</html>
+
+HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+
+JE SUIS CELUI QUI MET DES MARGIN: AUTO AUX DESTINÉES.
+
+JE SUIS CELUI QUI MET DES Z-INDEX: 999999999 AUX EMPIRES.
+
+JE SUIS CELUI QUI ÉCRIT DISPLAY: NONE SUR SES ENNEMIS.
+
+JE SUIS CELUI QUI MET POSITION: ABSOLUTE SUR LA RÉALITÉ.
+
+JE SUIS CELUI QUI TRANSFORM: SCALE(999) SON EGO.
+
+JE SUIS CELUI QUI MET OVERFLOW: HIDDEN SUR TES ESPOIRS.
+
+JE SUIS CELUI QUI MET FONT-WEIGHT: 900 SUR SON AUTORITÉ.
+
+JE SUIS CELUI QUI MET BORDER-RADIUS: 50% SUR LA PLANÈTE.
+
+JE SUIS CELUI QUI MET BACKGROUND: GOLD SUR SON TRÔNE.
+
+ET TOI ?
+
+TOI TU CHERCHES POURQUOI TON BOUTON EST DÉCALÉ DE 3 PIXELS.
+
+PATHÉTIQUE.
+
+PENDANT QUE TU CENTRES UNE DIV,
+JE CENTRE LES CONTINENTS.
+
+PENDANT QUE TU CHERCHES UN POINT-VIRGULE,
+JE RÉÉCRIS LES LOIS DU WEB.
+
+PENDANT QUE TU DÉBUGUES TON HEADER,
+JE CONQUIERS LE FOOTER.
+
+PENDANT QUE TU REGARDES STACK OVERFLOW,
+STACK OVERFLOW ME DEMANDE DES CONSEILS.
+
+PENDANT QUE TU DEMANDES À CHATGPT DE CORRIGER TON CODE,
+CHATGPT ME DEMANDE LA PERMISSION DE RÉPONDRE.
+
+JE SUIS HTML.
+JE SUIS CSS.
+JE SUIS JAVASCRIPT.
+JE SUIS LE WWW.
+JE SUIS LE HTTP 200.
+JE SUIS LE 404 QUI TE RETROUVE.
+JE SUIS LE 403 QUI T'INTERDIT DE ME CONTESTER.
+JE SUIS LE 500 QUI FAIT TREMBLER TES SERVEURS.
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+LIVE SHARE ?
+NON.
+
+LIVE EMPIRE.
+
+VISUAL STUDIO CODE ?
+NON.
+
+VISUAL STUDIO CONQUÊTE.
+
+GITHUB ?
+NON.
+
+GITKINGDOM.
+
+INDEX.HTML ?
+NON.
+
+INDEX.IMPERIUM.
+
+STYLE.CSS ?
+NON.
+
+STYLE.DOMINATION.
+
+SCRIPT.JS ?
+NON.
+
+SCRIPT.DESTRUCTION.
+
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+JE SUIS LE CONQUÉRANT DU HTML.
+
+ET SOUVIENS-TOI, PETIT DÉVELOPPEUR...
+
+TU PEUX FERMER TON NAVIGATEUR.
+TU PEUX QUITTER VS CODE.
+TU PEUX DÉBRANCHER TON PC.
+TU PEUX SUPPRIMER NODE_MODULES.
+TU PEUX FORMATER TON DISQUE DUR.
+
+MAIS TU NE POURRAS JAMAIS ÉCHAPPER À LA BALISE SUPRÊME.
+
+CAR LÀ OÙ TU VOIS DU CODE...
+
+MOI JE VOIS UN EMPIRE.
+
+👑⚔️ FIN DU MESSAGE IMPÉRIAL ⚔️👑

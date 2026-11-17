@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="js/pokedex.js" defer></script>
-    <script src="js/details.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pokedex.js" type="module" defer></script>
+    <script src="js/details.js" type="module" defer></script>
     <title>DÉTAILS AU NOM</title>
 </head>
 
 <body>
+    <a href="index.html" id="wshx"><strong> < Retour à la liste</strong></a>
+    <h1> Fiche Pokémon</h1>
+    <div id="grille"></div>
     <div id="barre">
         <div id="barre-titre">Papidex</div>
         <div id="barre-menu">
             <a href="index.html">Accueil</a>
-            <a href="details.html">Détails</a>
         </div>
+        
     </div>
+    
 
-    <a href="index.html" id="wshx"><strong> < Retour à la liste</strong></a>
 
-    <h1> Fiche Pokémon</h1>
+
+
+
+    <!--
     
    <div class="casex">
         
@@ -30,20 +36,21 @@
     
     <div class="infos-pokemonx">
             <div class="nomx">
-                <h3 id="n">N° 6767</h3>
-            <h2>Raimundonstre</h2></div>
+                <h3 id="n"></h3>
+            <h2 id="nom"></h2></div>
             <div class="typesx">
-                <img src="images/psy.png">
-                <img src="images/roche.png">
+                <img id="type1" src="images/psy.png">
+                <img id="type2" src="images/roche.png">
             </div>
             
         
-    <p class="mesurex">Taille : 1,82 m</p>
-    <p class="mesurex">Poids : 64,67 kg</p>
+    <p id="taille" class="mesurex"></p>
+    <p id="poids" class="mesurex"></p>
 
     <h3>Statistiques</h3>
 
     <div class="statx">
+        <p id="pv"></p>
         <span class="stat-nomx">PV</span>
         <div class="stat-fondx">
             <div class="stat-valeurx" style="width: 12%;"></div>
@@ -51,6 +58,7 @@
     </div>
 
     <div class="statx">
+        <p id="attaque"></p>
         <span class="stat-nomx">Attaque</span>
         <div class="stat-fondx">
             <div class="stat-valeurx" style="width: 90%;"></div>
@@ -58,10 +66,11 @@
     </div>
 
     <div class="statx">
+        <p id="defense"></p>
         <span class="stat-nomx">Défense</span>
         <div class="stat-fondx">
             <div class="stat-valeurx" style="width: 85%;"></div>
         </div>
     </div>
-</div>
+-->
 </body>

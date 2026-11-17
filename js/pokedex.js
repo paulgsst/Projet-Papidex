@@ -13,9 +13,23 @@ export const pokedex = [
         defense : 90,
         attaque_speciale : 150,
         defense_speciale : 140,
-        vitesse : 90
+        vitesse : 90,
+        forme:{
+            genre_de_forme : "primo",
+            nom : "Primo Kyogre",
+            type1 : "Eau",
+            type2: null,
+            image : "images/primo-kyogre.png",
+            taille : 9.8,
+            poids : 430.0,
+            pv : 100,
+            attaque : 150,
+            defense : 90,
+            attaque_speciale : 180,
+            defense_speciale : 160,
+            vitesse : 90
+        }
     },
-
          {
         numéro : 383,
         nom : "Groudon",
@@ -29,7 +43,22 @@ export const pokedex = [
         defense : 140,
         attaque_speciale : 100,
         defense_speciale : 90,
-        vitesse : 90
+        vitesse : 90,
+        forme:{
+            genre_de_forme : "primo",
+            nom : "Primo Groudon",
+            type1 : "Sol",
+            type2: "Feu",
+            image : "images/primo-groudon.png",
+            taille : 5,
+            poids : 999.7,
+            pv : 100,
+            attaque : 180,
+            defense : 160,
+            attaque_speciale : 150,
+            defense_speciale : 90,
+            vitesse : 90
+        }
     },
 
      {

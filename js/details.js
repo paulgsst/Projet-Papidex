@@ -25,12 +25,10 @@ function afficherCarte(pokemon)
 
         const divNom = document.createElement("div");
         divNom.className = "nomx";
-        divNom.setAttribute("id", "nom");
         const num = document.createElement("h3");
-        num.textContent = pokemon?.numéro;
         num.id = "n";
         const nom = document.createElement("h2");
-        nom.textContent = pokemon?.nom;
+        nom.id = "nomx"
         divNom.appendChild(num);
         divNom.appendChild(nom);
 
@@ -117,7 +115,8 @@ function afficherCarte(pokemon)
 afficherCarte(pokemon);
 
 if (pokemon != undefined) {
- document.getElementById("nom").textContent = pokemon?.nom;
+    document.getElementById("n").textContent= pokemon?.numéro;
+ document.getElementById("nomx").textContent = pokemon?.nom;
  document.getElementById("type1").textContent = pokemon?.type1;
  if(pokemon?.type2 != null){
     document.getElementById("type2").textContent = pokemon?.type2;

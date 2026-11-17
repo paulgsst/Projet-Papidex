@@ -40,8 +40,20 @@ function afficherCartes(liste)
             type2.textContent = pokemon.type2;
             divType.appendChild(type2);
         }
+
+        const divDetail = document.createElement("div");
+        divDetail.className="details";
+        const lienDetail = document.createElement("a");
+        lienDetail.id="details";
+        lienDetail.href="details.html?id="+pokemon.numéro;
+        const strongDetail = document.createElement("strong");
+        strongDetail.textContent = "Voir les détails >";
+        lienDetail.appendChild(strongDetail);
+        divDetail.appendChild(lienDetail);
+
         divInfoPokemon.appendChild(divNom);
         divInfoPokemon.appendChild(divType);
+        divInfoPokemon.appendChild(divDetail);
         carte.appendChild(divImage);
         carte.appendChild(divInfoPokemon);
         grille.appendChild(carte);

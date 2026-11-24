@@ -5,6 +5,7 @@ const numero = Number(params.get("id"));
 const pokemon = rechercherParNumero(numero);
 console.log(pokemon)
 
+
 function couleurStat(stat){
         if(stat<50){
             return "red";
@@ -21,6 +22,10 @@ function couleurStat(stat){
         if (stat>=200){ 
             return "green";
         }
+}
+
+function changerForme(id){
+    console.log(id);
 }
 
 function afficherCarte(pokemon)
@@ -43,23 +48,45 @@ function afficherCarte(pokemon)
 
         const divNom = document.createElement("div");
         divNom.className = "nomx";
-        divNom.setAttribute("id", "nomx");
 
         const num = document.createElement("div");
-        num.textContent = pokemon?.numéro;
+        num.textContent = "#" + pokemon?.numéro;
         num.id = "n";
         const nom = document.createElement("div");
         nom.textContent = pokemon?.nom;
+        nom.setAttribute("id", "nomx");
         divNom.appendChild(num);
         divNom.appendChild(nom);
 
         if(pokemon?.forme?.genre_de_forme != undefined){
+            var forme = false;
             const boutonForme = document.createElement("div");
             boutonForme.className = "bouton-forme";
             const formeNormale = document.createElement('div');
             formeNormale.textContent = "Base";
             const formeSpeciale = document.createElement("div");
-            formeSpeciale.textContent = pokemon.forme.genre_de_forme;
+            formeNormale.className = "forme_selected";
+            formeNormale.id = "forme_normale";
+            formeNormale.onclick= function() {
+                console.log("test", forme);
+                if (forme == true){
+                    forme = false;
+                    formeNormale.setAttribute("class", "forme_selected");
+                    formeSpeciale.setAttribute("class", "forme");
+
+                }
+            };
+            formeSpeciale.className = "forme";
+            formeSpeciale.id = "forme_speciale";
+            formeSpeciale.textContent = pokemon.forme.genre_de_forme.toUpperCase();
+            formeSpeciale.onclick = function(){
+                console.log("Test forme speciale : ", forme);
+                if (forme == false){
+                    forme = true;
+                    formeSpeciale.setAttribute("class", "forme_selected");
+                    formeNormale.setAttribute("class", "forme")
+                }
+            }
             boutonForme.appendChild(formeNormale);
             boutonForme.appendChild(formeSpeciale);
             divNom.appendChild(boutonForme);
